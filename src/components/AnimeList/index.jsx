@@ -6,7 +6,7 @@ const AnimeList = ({api}) => {
           <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 mt-2 p-4 ">
             {api.data?.map((anime, index) => {
               return (
-                    <Link href={`/${anime.mal_id}`}
+                    <Link href={`/anime/${anime.mal_id}`}
                       key={index} 
                       className="bg-[var(--mute)] shadow-xl/20 custom-shadow hover:scale-110 transition-transform ease-in-out duration-300 delay-100 cursor-pointer rounded-xl">
                         <Image 
