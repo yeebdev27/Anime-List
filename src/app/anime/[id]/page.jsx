@@ -28,9 +28,17 @@ const Page = async ({ params }) => {
                         <div className="md:col-span-3">
                             <p className="m-4 text-justify ">{anime.data.synopsis}</p>
                         </div>
-                        <div className="md:col-span-5">3</div>
+                        <div className="md:col-span-5">
+                            <div className="grid grid-cols-2 md:flex md:flex-row md:w-full m-4 gap-3">
+                                <div className="border border-gray-700 p-4">{anime.data.episodes}</div>
+                                <div className="border border-gray-700 p-4">{anime.data.members}</div>
+                                <div className="border border-gray-700 p-4">{anime.data.status}</div>
+                                <div className="border border-gray-700 p-4">{anime.data.type}</div>
+                                <div className="border border-gray-700 p-4">{anime.data.rating}</div>
+                            </div>
+                        </div>
                     </div>
-    
+
                 </main>
             </div>
         </>
